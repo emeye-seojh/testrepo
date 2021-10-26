@@ -9,7 +9,7 @@ class TemptestApplicationTests {
 	@Test
 	void contextLoads() throws Exception {
 		int i = 0;
-		if(i / 0 == 0) return;
+		if(i == 0) return;
 	}
 
 }
