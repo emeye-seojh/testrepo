@@ -7,7 +7,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 class TemptestApplicationTests {
 
 	@Test
-	void contextLoads() {
+	void contextLoads() throws Exception {
+		int i = 0;
+		if(i / 0 == 0) return;
 	}
 
 }
