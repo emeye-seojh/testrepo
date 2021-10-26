@@ -18,9 +18,6 @@
 		<repackage.classifier/>
 		<spring-native.version>0.10.4</spring-native.version>
 		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.build.sourceDirectories>${basedir}/src</project.build.sourceDirectories>
-        <checkstyle.config.location>${basedir}/checkstyle_main.xml</checkstyle.config.location>
         <sonar.projectKey>firstSonarQube</sonar.projectKey>
 	</properties>
 	<dependencies>
@@ -80,35 +77,6 @@
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-checkstyle-plugin</artifactId>
-                <version>3.1.2</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <dependencies>
-                    <dependency>
-                        <groupId>com.puppycrawl.tools</groupId>
-                        <artifactId>checkstyle</artifactId>
-                        <version>9.0</version>
-                    </dependency>
-                </dependencies>
-                <configuration>
-                    <violationSeverity>warning</violationSeverity>
-                    <failsOnError>true</failsOnError>
-                    <consoleOutput>true</consoleOutput>
-                    <configLocation>${checkstyle.config.location}</configLocation>
-                    <sourceDirectories>${project.build.sourceDirectories}</sourceDirectories>
-                    <propertyExpansion>suppressionFile=${basedir}/google_checks.xml</propertyExpansion>
-                </configuration>
-            </plugin>
-
-		</plugins>
 	</build>
 	<repositories>
 		<repository>
