@@ -77,6 +77,8 @@
 					</execution>
 				</executions>
 			</plugin>
+
+		</plugins>
 	</build>
 	<repositories>
 		<repository>
