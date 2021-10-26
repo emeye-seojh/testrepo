@@ -24,4 +24,15 @@ class TemptestApplicationTests {
 		}
 	}
 
+
+	@Test
+	void fortemp2() throws Exception {
+		int i = 0;
+		while(i < 100) {
+			logger.debug("for : " + i);
+			//if(i == 25) throw new Exception("abc");
+			i ++;
+		}
+	}
+
 }
