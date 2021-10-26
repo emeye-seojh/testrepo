@@ -20,6 +20,7 @@ class TemptestApplicationTests {
 	void fortemp() throws Exception {
 		for(int i = 0 ; i < 100; i ++) {
 			logger.debug("for : " + i);
+			throw new Exception("abc"); 
 		}
 	}
 
